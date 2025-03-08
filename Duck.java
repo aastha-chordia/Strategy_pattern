@@ -12,5 +12,9 @@ public abstract class Duck {
         this.quackBehavior = quackBehavior;
         this.swimBehavior = swimBehavior;
     }
+   // Method to display the duck's name and type
+    public void display() {
+        System.out.println("\n" + name + " behavior:");
+    }
 
- 
+  
