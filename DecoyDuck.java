@@ -8,5 +8,7 @@ public class DecoyDuck extends Duck {
               new MuteQuack(), // Cannot quack
               new Swim(Swim.SwimType.DROWN)); // Drowns
     }
-
-
+    public void display() {
+        System.out.println("Looks like a wooden decoy duck.");
+    }
+}
