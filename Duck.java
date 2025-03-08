@@ -17,4 +17,7 @@ public abstract class Duck {
         System.out.println("\n" + name + " behavior:");
     }
 
-  
+    // Method to execute the duck's fly behaviour
+    public void performFly() {
+        flyBehavior.fly();
+    }
