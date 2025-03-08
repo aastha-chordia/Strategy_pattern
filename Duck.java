@@ -4,3 +4,13 @@ public abstract class Duck {
     protected FlyBehavior flyBehavior;
     protected QuackBehavior quackBehavior;
     protected SwimBehavior swimBehavior;
+
+    // Defining a Constructor to initialize Duck properties
+    public Duck(String name, FlyBehavior flyBehavior, QuackBehavior quackBehavior, SwimBehavior swimBehavior) {
+        this.name = name;
+        this.flyBehavior = flyBehavior;
+        this.quackBehavior = quackBehavior;
+        this.swimBehavior = swimBehavior;
+    }
+
+ 
