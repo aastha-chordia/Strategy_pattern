@@ -19,3 +19,38 @@ public class Main {
 
             int choice = sc.nextInt(); // For reading user input
             Duck duck = null; // Declaring a Duck reference
+
+            // Determining which duck to create based on user choice
+            switch (choice) {
+                case 1:
+                    duck = new MallardDuck();
+                    break;
+                case 2:
+                    duck = new RedheadDuck();
+                    break;
+                case 3:
+                    duck = new RubberDuck();
+                    break;
+                case 4:
+                    duck = new DecoyDuck();
+                    break;
+                case 5:
+                    // Exiting the program
+                    System.out.println("Exiting...");
+                    sc.close();
+                    System.exit(0);
+                default:
+                    // Handling invalid input
+                    System.out.println("Invalid choice! Try again.");
+            }
+
+            // If a valid duck was selected, perform its actions
+            if (duck != null) {
+                duck.display(); // Shows the duck's appearance
+                duck.performFly(); // Performs fly behavior
+                duck.performQuack(); // Performs quack behavior
+                duck.performSwim(); // Performs swim behavior
+            }
+        }
+    }
+}
